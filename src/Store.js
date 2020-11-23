@@ -16,8 +16,10 @@ const initialState = {
 function reducer(state, action){
     switch (action.type){
         case 'FETCH_DATA':
-            return {...state, interRxcui: action.interRxcuiPayload, interName: action.namePayload, severity: action.severityPayload, 
-                description: action.descPayload, url:action.urlPayload};
+            return {...state, rxcui:action.rxcuiPayload, name: action.namePayload, 
+                interRxcui: action.interRxcuiPayload, interName: action.interNamePayload, 
+                severity: action.severityPayload, description: action.descPayload, 
+                url:action.urlPayload};
         default:
             return state;
     }
