@@ -23,7 +23,7 @@ export default function App(){
 
     
   React.useEffect(() => { 
-    state.rxcui.length === 0 && fetchDataAction();     
+    state.interRxcui.length === 0 && fetchDataAction();     
   });
 
   return(
@@ -32,6 +32,7 @@ export default function App(){
       <div>
         <h1>Drug Interactions</h1>
         <p></p>
+        
       </div>
     </React.Fragment>
   )};
